@@ -21,7 +21,8 @@
   },
   "devDependencies": {
     "husky": "^2.2.0",
-    "pretty-quick": "^1.10.0"
+    "pretty-quick": "^1.10.0",
+    "prettier": "*"
   },
   "dependencies": {
     "npm-name": "^5.3.0"
