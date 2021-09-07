@@ -1,6 +1,6 @@
 const npmName = require('npm-name')
 
-async function check (name) {
+async function check(name) {
   const available = await npmName(name).catch(() => {})
   if (available) {
     console.log(name)
@@ -33,8 +33,18 @@ const letters = [
   'w',
   'x',
   'y',
-  'z'
+  'z',
 ]
+
+for (let first of letters) {
+  check(first)
+}
+
+for (let first of letters) {
+  for (let second of letters) {
+    check(first + second)
+  }
+}
 
 for (let first of letters) {
   for (let second of letters) {
